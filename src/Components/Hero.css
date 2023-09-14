@@ -1,0 +1,178 @@
+
+.slide {
+  height: 38.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  background-size: cover !important;
+  background-position: center !important;
+  z-index: 1;
+}
+
+.slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(var(--white)), to(transparent));
+  background: linear-gradient(90deg, #fff, transparent);
+}
+
+.slide .content {
+  width: 33rem;
+  position: relative;
+  margin-left: 7rem;
+  margin-top: 3rem;
+}
+
+.slide .content h3 {
+  color: var(--vibrant-pinkish, #D9138A);
+  font-family: Poppins;
+  font-size: 2.7rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.slide .content p {
+  color: var(--black, #000F33);
+  font-family: Poppins;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 85%;
+  margin-top: 1rem;
+}
+.slide .content h2 {
+  font-family: Poppins;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top:1rem;
+  width: 85%;
+}
+
+.slide .content .btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem 4rem;
+  border-radius: 5px;
+  font-weight: 600;
+  background: #E2D810;
+  box-shadow: 0px 1px 17px 0px rgba(18, 164, 217, 0.17);
+  color:#000F33;
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.slide .content .btn:hover{
+  background: #000F33;
+  color:#fff;
+ 
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: initial;
+  bottom: 0;
+  left: initial;
+  right: 0;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  background: #fff;
+  margin:0;
+  z-index:1
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: #E2D810;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 2rem;
+  color: #111;
+}
+
+.swiper-button-prev {
+  right: 5rem;
+}
+
+@media (max-width: 768px) {
+  .slide .content {
+    width: 33rem;
+    position: relative;
+    margin-left: 3rem;
+    margin-top: 3rem;
+  }  
+  .slide .content h3 {
+    font-size: 2rem;
+  }
+  .slide .content p {
+    font-size: 1rem;
+  }
+  .slide .content h2 {
+    font-size: 1rem;
+  }
+  .slide .content .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+  }
+  .swiper-button-next,
+.swiper-button-prev {
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+}
+.swiper-button-prev {
+  right: 4rem;
+}
+.slide .content h3 {
+ margin-right:1rem
+}
+}
+
+@media (max-width: 640px) {
+
+  .slide .content h3 {
+    font-size: 1.8rem;
+  }
+  .slide .content p {
+    font-size: 0.9rem;
+  }
+  .slide .content h2 {
+    font-size: 0.9rem;
+  }
+  .slide .content .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
+  .swiper-button-next,
+.swiper-button-prev {
+  height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
+}
+.swiper-button-prev {
+  right: 3rem;
+}
+.slide .content h3 {
+ margin-right:1rem
+}
+}
