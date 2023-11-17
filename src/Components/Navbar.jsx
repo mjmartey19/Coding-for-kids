@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import rocket from './../assets/rocket.svg';
 import logo from './../assets/logo.png';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   const [navbar, setNavBackground] = useState(false);
-  const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState(true);
 
 
   const handleNav = () => {
@@ -34,7 +35,7 @@ function Navbar() {
           <a href="#program" className="hover:text-[#12A4D9]">
             <li>Programs</li>
           </a>
-          <a href="#about" className="hover:text-[#12A4D9]">
+          <a to="#about" className="hover:text-[#12A4D9]">
             <li>About Us</li>
           </a>
         </ul>

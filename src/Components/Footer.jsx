@@ -5,6 +5,7 @@ import linkedIn from "../assets/linkedin.svg";
 import instagram from "../assets/instagram.svg";
 
 function FooterSection() {
+    const date= new Date().getFullYear()
     return (
         <div className='bg-[#000F33] flex items-center justify-center w-full px-10'>
             <div className=' py-10 flex flex-col justify-center gap-10'>
@@ -56,7 +57,7 @@ function FooterSection() {
                         </ul>
                     </div>
                 </div>
-                <div className='md:text-lg text-sm text-white font-semibold'><span>Copyright © 2023 </span><span class="text-sky-500">Mpact Lane Consult</span><span>, All Rights Reserved</span></div>
+                <div className='md:text-lg text-sm text-white font-semibold'><span>Copyright © {date} </span><span class="text-sky-500">Mpact Lane Consult</span><span>, All Rights Reserved</span></div>
 
             </div>
         </div>
