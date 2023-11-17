@@ -44,7 +44,7 @@ function Hero() {
               Unlock your Child's Potential with our Coding Adventure for Young Minds. Join our 6-week Coding for Kids and Teens program in the Ashanti Region. Suitable for ages 5 to 19.
             </p>
             <h2>RATE: Ghc750.00 (Gh600 early bird discount).</h2>
-            <a href="#about" className="btn">
+            <a href="http://bit.ly/coding4kidsandteens" className="btn">
               Register
             </a>
           </div>
@@ -64,7 +64,7 @@ function Hero() {
               Unlock your Child's Potential with our Coding Adventure for Young Minds. Join our 6-week Coding for Kids and Teens program in the Ashanti Region. Suitable for ages 5 to 19.
             </p>
             <h2>RATE: Ghc750.00 (Gh600 early bird discount).</h2>
-            <a href="#about" className="btn">
+            <a href="http://bit.ly/coding4kidsandteens" className="btn">
               Register
             </a>
           </div>
@@ -84,7 +84,7 @@ function Hero() {
               Unlock your Child's Potential with our Coding Adventure for Young Minds. Join our 6-week Coding for Kids and Teens program in the Ashanti Region. Suitable for ages 5 to 19.
             </p>
             <h2>RATE: Ghc750.00 (Gh600 early bird discount).</h2>
-            <a href="#about" className="btn">
+            <a href="http://bit.ly/coding4kidsandteens" className="btn">
               Register
             </a>
           </div>
@@ -104,7 +104,7 @@ function Hero() {
               Unlock your Child's Potential with our Coding Adventure for Young Minds. Join our 6-week Coding for Kids and Teens program in the Ashanti Region. Suitable for ages 5 to 19.
             </p>
             <h2>RATE: Ghc750.00 (Gh600 early bird discount).</h2>
-            <a href="#about" className="btn">
+            <a href="http://bit.ly/coding4kidsandteens" className="btn">
               Register
             </a>
           </div>

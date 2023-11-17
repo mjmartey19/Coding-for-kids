@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import rocket from './../assets/rocket.svg';
 import logo from './../assets/logo.png';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   const [navbar, setNavBackground] = useState(false);
-  const [nav, setNav] = useState(false);
+  const [nav, setNav] = useState(true);
 
 
   const handleNav = () => {
@@ -26,7 +27,7 @@ function Navbar() {
   return (
     <div className={!navbar ? "fixed flex justify-between items-center h-20 w-full mx-auto md:px-20 px-10  z-10" : "fixed flex justify-between items-center h-20 w-full mx-auto md:px-20 px-10  bg-white ease-in-out duration-500 z-10"}>
       <div className="flex justify-between items-center gap-20 relative ease-in-out duration-500">
-        <img src={logo} alt="Logo" className="w-12" />
+        <a href="#home"><img src={logo} alt="Logo" className="w-12" /></a>
         <ul className="hidden md:flex gap-5 text-[#000F33] text-lg font-semibold">
           <a href="#home" className="hover:text-[#12A4D9]">
             <li>Home</li>
@@ -34,18 +35,17 @@ function Navbar() {
           <a href="#program" className="hover:text-[#12A4D9]">
             <li>Programs</li>
           </a>
-          <a href="#about" className="hover:text-[#12A4D9]">
+          <a to="#about" className="hover:text-[#12A4D9]">
             <li>About Us</li>
           </a>
         </ul>
       </div>
-
       <a
         href="#contact"
-        className="px-5 py-2 bg-[#12A4D9] rounded shadow justify-end items-center gap-1.5 hidden md:flex"
+        className="px-5 py-2 bg-[#12A4D9] rounded shadow justify-end items-center gap-1.5 hidden md:flex hover:bg-[#000F33] transition duration-200 ease-linear"
       >
         <img src={rocket} alt="Rocket" />
-        <span className="text-white text-lg font-semibold">Contact Us</span>
+        <span className="text-white text-lg font-semibold ">Contact Us</span>
       </a>
 
       {/* ? Mobile view */}

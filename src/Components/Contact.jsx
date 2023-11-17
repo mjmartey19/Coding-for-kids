@@ -10,11 +10,11 @@ function ContactSection() {
             }}>
 
             <div className=' px-14 py-8'>
-                <div className='border bg-white p-8 w-[465px] mx-2'>
+                <div className='border bg-white p-8 md:w-[465px] w-[350px] '>
                     <h1 className='text-[24px] font-poppins font-medium md:leading-normal text-[#000F33] text-center'>Make Your Enquires</h1>
-                    <form className='px-8 pt-10'>
+                    <form className='px-8 pt-10 w-full'>
                         <div className='mb-4'>
-                            <label htmlFor='name' lassName='lg'>Name</label>
+                            <label htmlFor='name' className='lg'>Name</label>
                             <input
                                 type='text'
                                 id='name'
@@ -28,13 +28,13 @@ function ContactSection() {
                                 className=' px-5 border rounded-none bg-[#FAFAFA] w-full' />
                         </div>
 
-                        <div className='mb-4'>
+                        <div className='mb-4 '>
                             <label htmlFor='number' className='lg'>Phone no.</label>
                             <input type='number' id='number' name='phone'
-                                className='border rounded bg-[#FAFAFA] w-full py-2'
+                                className='px-5 border rounded bg-[#FAFAFA] w-full py-2'
                             />
                         </div>
-                        <button type='submit' className=" text-white text-xl font-semibold bg-[#12A4D9] flex justify-center items-center gap-[7px] self-stretch py-3 w-full hover:bg-[#12A4D9]">Submit</button>
+                        <button type='submit' className=" text-white text-xl font-semibold bg-[#12A4D9] hover:bg-[#000F33] transition duration-200 ease-linear flex justify-center items-center gap-[7px] self-stretch py-3 w-full">Submit</button>
 
                     </form>
                 </div>
